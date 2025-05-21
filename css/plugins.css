@@ -951,9 +951,11 @@ body.compensate-for-scrollbar {
 {
     float: right;
 }
-.slick-slide img
-{
-    display: block;
+.slick-slide img {
+  width: 1450px;
+  height: 480px;
+  object-fit: cover; /* ensures image doesn't stretch */
+  margin: 0 auto;
 }
 .slick-slide.slick-loading img
 {
