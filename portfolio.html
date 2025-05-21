@@ -247,34 +247,5 @@
 	<!-- include jQuery -->
 	<script src="js/jquery.main.js"></script>
 	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-	<script>
-	  document.addEventListener("DOMContentLoaded", function () {
-		var elem = document.querySelector('.project-holder');
-		var iso = new Isotope(elem, {
-		  itemSelector: '.col',
-		  layoutMode: 'fitRows'
-		});
-	
-		// Apply default filter: Gilindera
-		iso.arrange({ filter: '.gil' });
-	
-		// Highlight the Gilindera button
-		const filters = document.querySelectorAll('.filter-list a');
-		filters.forEach(f => f.classList.remove('active'));
-		document.querySelector('[data-filter=".gil"]').classList.add('active');
-	
-		// Add click event for other filters
-		filters.forEach(filterLink => {
-		  filterLink.addEventListener('click', function (e) {
-			e.preventDefault();
-			const filterValue = this.getAttribute('data-filter');
-			iso.arrange({ filter: filterValue });
-	
-			filters.forEach(f => f.classList.remove('active'));
-			this.classList.add('active');
-		  });
-		});
-	  });
-	</script>	
 </body>
 </html>
