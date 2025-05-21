@@ -323,34 +323,38 @@ $(document).ready(function() {
 			    }
 		    ]
 		});
-		jQuery('.project-slider').slick({
-	      slidesToScroll: 1,
-	      centerMode: true,
-	      centerPadding: '24.5%',
-	      autoplay: true,
-	      arrows: false,
-	      speed: 1000,
-	      responsive: [
-	        {
-	          breakpoint: 1450,
-	          settings: {
-	            centerPadding: '13%'
-	          }
-	        },
-	        {
-	          breakpoint: 600,
-	          settings: {
-	            centerPadding: '19.20%'
-	          }
-	        },
-	        {
-	          breakpoint: 480,
-	          settings: {
-	            centerPadding: '0%'
-	          }
-	        }
-	      ]
-	    });
+		jQuery(document).ready(function() {
+            jQuery('.project-slider').slick({
+              slidesToScroll: 1,
+              centerMode: true,
+              centerPadding: '24.5%',
+              autoplay: true,
+              autoplaySpeed: 1000,
+              speed: 1000,
+              infinite: true,
+              arrows: false,
+              responsive: [
+                {
+                  breakpoint: 1450,
+                  settings: {
+                    centerPadding: '13%'
+                  }
+                },
+                {
+                  breakpoint: 600,
+                  settings: {
+                    centerPadding: '19.20%'
+                  }
+                },
+                {
+                  breakpoint: 480,
+                  settings: {
+                    centerPadding: '0%'
+                  }
+                }
+              ]
+            });
+          });       
 	    jQuery('.work-slider').slick({
 	      slidesToScroll: 1,
 	      centerMode: true,

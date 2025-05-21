@@ -12,8 +12,8 @@
 #back-top.active,
 .service-col:hover .sc1,
 #nav .sub-menu li a:hover,
-.project-sec .col .over{background-color: #ecc719;}
-.service-col:hover .sc1{ border: 1px solid #ecc719;}
+.project-sec .col .over{background-color: #F2F2F2;}
+.service-col:hover .sc1{ border: 1px solid #222;}
 .btn-primary,
 .btn-primary:active, .btn-primary:hover, .btn-primary:focus,
 .btn-primary.bg-white:active, .btn-primary.bg-white:hover, .btn-primary.bg-white:focus {
