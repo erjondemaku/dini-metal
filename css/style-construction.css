@@ -43,6 +43,11 @@ Template URI: http://www.htmlbeans.com/html/dekko/
 /*------------------------------------------------------------------
 1. import files / import files
 -------------------------------------------------------------------*/
+
+html {
+  scroll-behavior: smooth;
+}
+
 #wrapper {
   position: relative;
   overflow: hidden;
